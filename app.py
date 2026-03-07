@@ -174,7 +174,7 @@ def sanitize_video(input_path, output_path, blur_intensity, scale_factor, min_ne
     fps = cap.get(cv2.CAP_PROP_FPS)
     total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
     
-    fourcc = cv2.VideoWriter_fourcc(*'mp4v') 
+    fourcc = cv2.VideoWriter_fourcc(*'vp09') 
     out = cv2.VideoWriter(output_path, fourcc, fps, (width, height))
 
     # Initialize progress bar in the UI
@@ -285,7 +285,7 @@ if uploaded_file is not None:
             with st.spinner("⏳ Preparing your video environment..."):
                 tfile_in = tempfile.NamedTemporaryFile(delete=False, suffix='.mp4')
                 tfile_in.write(uploaded_file.read())
-                tfile_out = tempfile.NamedTemporaryFile(delete=False, suffix='.mp4')
+                tfile_out = tempfile.NamedTemporaryFile(delete=False, suffix='.webm')
                 
             success, msg = sanitize_video(
                 tfile_in.name, 
@@ -322,8 +322,8 @@ if uploaded_file is not None:
             st.download_button(
                 label="⬇️ Download Secure Video",
                 data=st.session_state.processed_video,
-                file_name="sanitized_video.mp4",
-                mime="video/mp4",
+                file_name="sanitized_video.webm",
+                mime="video/webm",
                 use_container_width=True
             )
             
