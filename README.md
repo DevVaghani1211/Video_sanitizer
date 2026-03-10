@@ -23,14 +23,11 @@
 ### 🖥️ Application UI
 ![UI Preview](UI.png)
 
-### 🎬 Demo GIF
-![Demo](assets/demo.gif)
-
 ### 🎥 Before vs After
 
 | Original Video | Anonymized Video |
 |----------------|------------------|
-| ![](assets/original.png) | ![](assets/anonymized.png) |
+| ![](Vd.mp4) | ![](Sn_Vd.mp4) |
 
 > 📌 *Add screenshots or GIFs in the `assets/` folder to showcase the UI and anonymization results.*
 
