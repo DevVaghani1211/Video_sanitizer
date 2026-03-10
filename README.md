@@ -24,7 +24,7 @@
 ![UI Preview](UI.png)
 
 ### 🎥 Comparison
-![Original Video vs Anonymized Video](Cmp.png)
+![Original Video vs Anonymized Video](Cmp1.png)
 
 > 📌 *Add screenshots or GIFs in the `assets/` folder to showcase the UI and anonymization results.*
 
@@ -67,3 +67,25 @@ Dark theme with **glassmorphism UI** and an interactive sidebar.
 # ⚙️ How It Works
 
 The anonymization pipeline follows a simple but powerful workflow:
+
+### Pipeline Explanation
+
+1️⃣ User uploads a video  
+2️⃣ The video is broken into frames  
+3️⃣ Each frame is analyzed for faces using OpenCV  
+4️⃣ Detected face regions are blurred  
+5️⃣ Frames are recombined into a processed video  
+6️⃣ User downloads the anonymized output
+
+---
+
+# 🧰 Tech Stack
+
+| Technology | Purpose |
+|-----------|--------|
+| **Python** | Core programming language |
+| **OpenCV** | Face detection & video processing |
+| **Streamlit** | Interactive web application |
+| **Computer Vision** | Face detection and anonymization |
+
+---
