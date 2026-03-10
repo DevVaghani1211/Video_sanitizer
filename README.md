@@ -24,9 +24,7 @@
 ![UI Preview](UI.png)
 
 ### 🎥 Comparison
-
-| Original Video vs Anonymized Video |
-![](cmp.png) |
+![Original Video vs Anonymized Video](Cmp.png)
 
 > 📌 *Add screenshots or GIFs in the `assets/` folder to showcase the UI and anonymization results.*
 
