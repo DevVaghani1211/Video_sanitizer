@@ -21,7 +21,7 @@
 # 🎥 Project Demo
 
 ### 🖥️ Application UI
-![UI Preview](assets/ui-preview.png)
+![UI Preview](UI.png)
 
 ### 🎬 Demo GIF
 ![Demo](assets/demo.gif)
